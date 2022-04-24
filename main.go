@@ -64,6 +64,7 @@ func main() {
 			return
 		}
 		fmt.Println(rows[1])
+		fmt.Println(&rows[1])
 		fmt.Println(fmt.Sprintf("A%v", i+2))
 
 		err = newFile.SetSheetRow("Sheet1", fmt.Sprintf("A%v", i+2), &rows[1])
